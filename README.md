@@ -38,7 +38,7 @@ Trigger Welcome + Annual Reminder Sequences
 ### Build Phases Resource Optimization
 - **Strategic Model Usage**: Opus 4 for complex logic (2-3h), Sonnet 4 for implementation (30-38h)
 - **Resource Efficiency**: 60-70% reduction in premium model usage vs unoptimized
-- **Max Plan Utilization**: 21-29% of weekly limits, leaving 70%+ for other projects
+- **Max Plan Utilization**: 10.5-14.5% of weekly limits, leaving 85%+ for other projects
 - **4-Phase Development**: Foundation → Integration → Automation → Production
 
 ## 📋 Project Documentation
@@ -205,11 +205,11 @@ npm run health
 
 ## 📊 Resource Optimization
 
-### $100 Max Plan Efficiency
-- **Total Project**: 32-41 hours (21-29% of weekly Sonnet 4 limit)
-- **Premium Usage**: 2-3 hours Opus 4 (13-20% of weekly limit)
+### $200 Max Plan Efficiency
+- **Total Project**: 32-41 hours (10.5-14.5% of weekly Sonnet 4 limit)
+- **Premium Usage**: 2-3 hours Opus 4 (6.5-10% of weekly limit)
 - **Efficiency Gain**: 60-70% reduction vs unoptimized approach
-- **Remaining Capacity**: 70%+ for other projects
+- **Remaining Capacity**: 85%+ for other projects
 
 ### Model Selection Strategy
 - **Sonnet 4**: Standard implementation, API integration, email sequences
@@ -237,7 +237,7 @@ npm run health
 **Business Type**: Customer Lifecycle Marketing for Business Services  
 **Integration Target**: Stripe → Instantly for Customer Retention  
 **Framework Enhanced**: AI Development Meta-Framework + Claude Code Sub-Agents  
-**Resource Optimized**: Strategic model usage within $100 Max Plan limits  
+**Resource Optimized**: Strategic model usage within $200 Max Plan limits  
 **Primary Goal**: Automate annual renewal reminders by state and date  
 **Secondary Goal**: Cross-sell complementary business services  
 **Created**: August 2025 for Brian's specific business needs with advanced framework integration

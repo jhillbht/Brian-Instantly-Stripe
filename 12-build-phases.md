@@ -1,25 +1,25 @@
 # Build Phases - Brian Instantly Stripe Integration
 
-**Plan**: $100 Max Plan (5x Pro usage)  
+**Plan**: $200 Max Plan (10x Pro usage)  
 **Resource Planning**: Token/Session/Rate Limit Based  
 **Goal**: Customer retention automation system with optimal resource usage  
 **Project**: Stripe → Instantly integration for annual renewal reminders
 
 ---
 
-## 📊 Resource Summary - $100 Max Plan
+## 📊 Resource Summary - $200 Max Plan
 
 ### Web Interface (Claude Chat)
-- **Session Capacity**: 225 messages per 5-hour session
-- **Daily Capacity**: ~1,080 messages (4.8 sessions × 225)
-- **Weekly Capacity**: ~7,560 messages
+- **Session Capacity**: 450 messages per 5-hour session
+- **Daily Capacity**: ~2,160 messages (4.8 sessions × 450)
+- **Weekly Capacity**: ~15,120 messages
 - **Reset Cycle**: Every 5 hours
 
 ### Claude Code
-- **Weekly Sonnet 4**: 140-280 hours (conservative: 140h)
-- **Weekly Opus 4**: 15-35 hours (conservative: 15h) 
-- **Session Capacity**: 50-200 prompts per 5 hours
-- **Daily Sonnet**: ~20 hours (140h ÷ 7 days)
+- **Weekly Sonnet 4**: 280-560 hours (conservative: 280h)
+- **Weekly Opus 4**: 30-70 hours (conservative: 30h) 
+- **Session Capacity**: 100-400 prompts per 5 hours
+- **Daily Sonnet**: ~40 hours (280h ÷ 7 days)
 - **Reset Cycle**: Weekly (every 7 days)
 
 ---
@@ -203,21 +203,21 @@ Prompts 11-15: Error handling and retry logic
 ## 📊 Total Resource Requirements
 
 ### Complete Integration Summary
-| Resource Type | Total Required | $100 Max Plan Capacity | Utilization |
+| Resource Type | Total Required | $200 Max Plan Capacity | Utilization |
 |---------------|----------------|-------------------------|-------------|
-| **Claude Code Prompts** | 160-215 prompts | 350-1,400/week | 11-61% |
-| **Sonnet 4 Hours** | 30-38 hours | 140 hours/week | 21-27% |
-| **Opus 4 Hours** | 2-3 hours | 15 hours/week | 13-20% |
-| **Web Messages** | 185 messages | 1,575/week | 12% |
-| **Implementation Timeframe** | 2-3 days | 1 week capacity | Comfortable |
+| **Claude Code Prompts** | 160-215 prompts | 700-2,800/week | 5.5-31% |
+| **Sonnet 4 Hours** | 30-38 hours | 280 hours/week | 10.5-13.5% |
+| **Opus 4 Hours** | 2-3 hours | 30 hours/week | 6.5-10% |
+| **Web Messages** | 185 messages | 3,150/week | 6% |
+| **Implementation Timeframe** | 2-3 days | 1 week capacity | Very Comfortable |
 
 ### Resource Distribution by Phase
 | Phase | Sonnet 4 Hours | Opus 4 Hours | % of Weekly Limit | Prompts | Web Messages |
 |-------|----------------|--------------|-------------------|---------|--------------|
-| Phase 1 | 4-5 hours | 2-3 hours | 4-6% | 30-40 | 35 |
-| Phase 2 | 10-12 hours | 0 hours | 7-9% | 50-70 | 60 |
-| Phase 3 | 8-10 hours | 0 hours | 6-7% | 45-60 | 50 |
-| Phase 4 | 6-8 hours | 0 hours | 4-6% | 35-45 | 40 |
+| Phase 1 | 4-5 hours | 2-3 hours | 2-3% | 30-40 | 35 |
+| Phase 2 | 10-12 hours | 0 hours | 3.5-4.5% | 50-70 | 60 |
+| Phase 3 | 8-10 hours | 0 hours | 3-3.5% | 45-60 | 50 |
+| Phase 4 | 6-8 hours | 0 hours | 2-3% | 35-45 | 40 |
 
 ---
 
@@ -261,11 +261,11 @@ Prompts 11-15: Error handling and retry logic
 - **Usage**: ~16 hours Sonnet 4, 80 prompts, 90 web messages
 
 ### Weekly Resource Consumption
-- **Total Sonnet 4**: 32-40 hours (23-29% of weekly limit)
-- **Total Opus 4**: 2-3 hours (13-20% of weekly limit)
-- **Total Prompts**: 185 prompts (53% of conservative session estimate)
-- **Total Web Messages**: 185 messages (12% of weekly limit)
-- **Buffer Remaining**: 100-108 Sonnet 4 hours (71-77% for other projects)
+- **Total Sonnet 4**: 32-40 hours (11.5-14.5% of weekly limit)
+- **Total Opus 4**: 2-3 hours (6.5-10% of weekly limit)
+- **Total Prompts**: 185 prompts (26.5% of conservative session estimate)
+- **Total Web Messages**: 185 messages (6% of weekly limit)
+- **Buffer Remaining**: 240-248 Sonnet 4 hours (85.5-88.5% for other projects)
 
 ---
 
@@ -343,31 +343,31 @@ Steps 7-10: MCP Integration (@model:sonnet-4)
 ## 📊 Resource Efficiency Analysis
 
 ### Before Model Optimization:
-- **Opus 4 Usage**: 6-8 hours for entire project (40-53% of weekly limit)
+- **Opus 4 Usage**: 6-8 hours for entire project (20-27% of weekly limit)
 - **Risk**: Depleting premium model capacity on routine integration tasks
 - **Inefficiency**: Using expensive model for standard API integrations
 
 ### After Model Optimization:
-- **Opus 4 Usage**: 2-3 hours for Phase 1 only (13-20% of weekly limit) 
+- **Opus 4 Usage**: 2-3 hours for Phase 1 only (6.5-10% of weekly limit) 
 - **Efficiency Gain**: 60-70% reduction in Opus 4 usage
 - **Quality Maintained**: Complex business logic still gets premium intelligence
-- **Capacity Preserved**: 12-33 Opus 4 hours remaining for other projects
+- **Capacity Preserved**: 27-68 Opus 4 hours remaining for other projects
 
 ### Expected Weekly Resource Usage:
 ```
 Brian Integration Consumption:
-├── Opus 4: 2-3 hours (13-20% of weekly 15-35h limit)
-├── Sonnet 4: 30-37 hours (21-26% of weekly 140-280h limit)  
-├── Remaining Opus 4: 12-33 hours for other projects
-└── Remaining Sonnet 4: 103-250 hours for other projects
+├── Opus 4: 2-3 hours (6.5-10% of weekly 30-70h limit)
+├── Sonnet 4: 30-37 hours (10.5-13% of weekly 280-560h limit)  
+├── Remaining Opus 4: 27-68 hours for other projects
+└── Remaining Sonnet 4: 243-530 hours for other projects
 ```
 
 ### ROI Analysis:
 - **Same Quality**: Complex webhook logic receives Opus 4 intelligence
 - **Better Efficiency**: 60-70% reduction in premium model usage
-- **More Capacity**: Significant resources preserved for other integrations
-- **Optimal Value**: Maximum benefit from $100 Max Plan investment
+- **More Capacity**: Massive resources preserved for other integrations
+- **Optimal Value**: Maximum benefit from $200 Max Plan investment
 
 ---
 
-*Resource planning optimized for customer retention automation system within $100 Max Plan limits. Designed for efficient integration development while maintaining enterprise-quality webhook processing and email automation.*
+*Resource planning optimized for customer retention automation system within $200 Max Plan limits. Designed for efficient integration development while maintaining enterprise-quality webhook processing and email automation.*
