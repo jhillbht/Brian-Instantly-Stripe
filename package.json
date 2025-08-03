@@ -1,0 +1,50 @@
+{
+  "name": "brian-instantly-stripe",
+  "version": "1.0.0",
+  "description": "Automated workflow integration between Instantly email platform and Stripe payment processing",
+  "main": "index.js",
+  "scripts": {
+    "setup": "echo 'Setting up Brian Instantly Stripe Integration...'",
+    "install:instantly": "cd ../Instantly-MCP && npm install",
+    "install:stripe": "cd ../stripe-mcp && npm install && npm run build",
+    "start:instantly": "cd ../Instantly-MCP && npm start",
+    "start:stripe": "cd ../stripe-mcp && npm start",
+    "build:all": "npm run install:instantly && npm run install:stripe",
+    "test:apis": "echo 'Testing API connections...' && curl -f $INSTANTLY_API_ENDPOINT && curl -f $STRIPE_API_ENDPOINT",
+    "docs": "echo 'Opening documentation...' && open README.md",
+    "health": "ps aux | grep node | grep -E '(instantly|stripe)'",
+    "logs": "tail -f ../Instantly-MCP/logs/server.log ../stripe-mcp/logs/server.log",
+    "clean": "rm -rf ../Instantly-MCP/node_modules ../stripe-mcp/node_modules",
+    "reset": "npm run clean && npm run build:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/organized-ai/brian-instantly-stripe.git"
+  },
+  "keywords": [
+    "instantly",
+    "stripe",
+    "email-automation",
+    "payment-processing",
+    "lead-generation",
+    "claude-ai",
+    "mcp-server",
+    "workflow-automation"
+  ],
+  "author": "BHT Labs / Organized AI",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ]
+}
